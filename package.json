@@ -1,0 +1,31 @@
+{
+  "name": "basic-graphiql",
+  "version": "1.0.0",
+  "description": "A basic graphiql page",
+  "main": "index.js",
+  "author": "Derrick Plotsky <derrickplotsky@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server -p 2301",
+    "sass": "node-sass 'src/graphiql.scss' 'public/dist/graphiql.css'",
+    "compile": "webpack",
+    "build": "npm run sass && npm run compile"
+  },
+  "devDependencies": {
+    "@types/react": "^16.1.0",
+    "@types/react-dom": "^16.0.4",
+    "dotenv": "^5.0.1",
+    "http-server": "^0.11.1",
+    "ignore-loader": "^0.1.2",
+    "node-sass": "^4.8.3",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "graphiql": "^0.11.11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
